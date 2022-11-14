@@ -1,23 +1,16 @@
 package basicSelenium;
 
 import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import page.todoist.onboardPage;
 
-import javax.swing.*;
 import java.time.Duration;
 import java.util.Date;
-import java.util.NoSuchElementException;
 
-public class BasicSeleniumTest {
+public class BasicSeleniumTestProject {
 
     WebDriver driver;
 
