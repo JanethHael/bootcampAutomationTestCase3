@@ -55,8 +55,8 @@ public class BasicSeleniumTestProject {
         //delete
         driver.findElement(By.xpath("//button[contains(@class,'q-PolHQBMEHmpVzKzPeWWA==')]")).click();
         driver.findElement(By.xpath("//div[contains(text(),'Eliminar proyecto')]")).click();
-        driver.findElement(By.xpath("//button[contains(@class,'a8af2163 _3d1243b2 _352995bd f9408a0e _56a651f6')]")).click();
-
+        //driver.findElement(By.xpath("//button[contains(@class,'a8af2163 _3d1243b2 _352995bd f9408a0e _56a651f6')]")).click();
+        driver.findElement(By.cssSelector("button[type='submit']")).click();
         ////ul/li/div[contains(@class,'icon_menu_item__content')]//div[text()='Editar proyecto']
         //ul/li/div[contains(@class,'icon_menu_item__content')]
 
