@@ -60,20 +60,13 @@ public class BasicSeleniumTestTask {
         driver.findElement(By.xpath("//button[contains(@data-testid,'task-editor-submit-button')]")).click();
 
         //update
-       /* driver.findElement(By.xpath("//button[contains(@aria-label,'Editar')]")).click();
+       driver.findElement(By.xpath("//button[contains(@aria-label,'Editar')]")).click();
         driver.findElement(By.xpath("//div[@role='textbox']")).sendKeys("PrimertareaUpdate");
         driver.findElement(By.xpath("//textarea[@aria-invalid='false']")).sendKeys("DescripcionUpdate");
-        driver.findElement(By.xpath("//button[contains(@data-testid,'task-editor-submit-button')]")).click();*/
+        driver.findElement(By.xpath("//button[contains(@data-testid,'task-editor-submit-button')]")).click();
 
         //delete
         driver.findElement(By.xpath("//li[1]/div[1]/div[4]/button[contains(@aria-label,'Más acciones de tarea')]")).click();
-
-        //body/div[@id='todoist_app']/div[@id='page_background']/div[@id='app_holder']/div[@id='content_wrapper']/main[@id='content']/div[@id='editor']/div[@id='agenda_view']/div[1]/section[1]/div[1]/ul[1]/li[3]/div[1]/div[4]/button[3]
-        //div[@id='editor']/div[@id='agenda_view']/div[1]/section[1]/div[1]/ul[1]/li[1]/div[1]/div[3]
-
-        //body/div[@id='todoist_app']/div[@id='page_background']/div[@id='app_holder']/div[@id='content_wrapper']/main[@id='content']/div[@id='editor']/div[@id='agenda_view']/div[1]/section[1]/div[1]/ul[1]/li[2]/div[1]/div[4]/button[3]
-
-
 
 
     }
