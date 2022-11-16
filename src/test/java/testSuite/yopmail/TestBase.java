@@ -21,6 +21,7 @@ public class TestBase {
 
     @BeforeEach
     public void openBrowser(){
+
         Session.getInstance().getBrowser().get(GetPropertiesYopmail.getInstance().getHost());
     }
 
