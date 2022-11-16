@@ -49,12 +49,10 @@ public class CRUDTaskTest {
 
         Assertions.assertTrue(driver.findElement(By.id("loading")).isDisplayed()
                 ,"ERROR login was incorrect");
-
         //create
         String nameTask="FirstTask"+new Date().getTime();
         String descriptionTask="First Task Description 1";
         driver.findElement(By.xpath("//li/button[contains(@class,'plus_add_button')]")).click();
-        //driver.findElement(By.xpath("//div[@data-offset-key='6p2n4-0-0' and @data-block='true']")).sendKeys("Primertarea");
         driver.findElement(By.xpath("//div[@role='textbox']")).sendKeys(nameTask);
         driver.findElement(By.xpath("//textarea[@aria-invalid='false']")).sendKeys(descriptionTask);
         driver.findElement(By.xpath("//button[contains(@data-testid,'task-editor-submit-button')]")).click();

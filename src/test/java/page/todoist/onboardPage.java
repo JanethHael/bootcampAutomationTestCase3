@@ -9,6 +9,4 @@ public class onboardPage {
     /*public Button expertButton = new Button(By.xpath("//div[text()='Experto/a']"));
     public TextBox nameText = new TextBox(By.id("o1igLF0"));
     public Button openButton = new Button(By.xpath("//span[text()='Abrir Todoist']"));*/
-
-
 }
