@@ -1,4 +1,4 @@
-package basicSelenium;
+package testPage;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.Date;
 
-public class BasicSeleniumTestTask {
+public class CRUDTaskTest {
 
     WebDriver driver;
 
@@ -39,7 +39,6 @@ public class BasicSeleniumTestTask {
 
     @Test
     public void verifyCRUDProject() throws InterruptedException {
-
         // login
         driver.findElement(By.id("element-0")).sendKeys("janeth.martinez6112@gmail.com");
         driver.findElement(By.id("element-3")).sendKeys("123456jhan");
@@ -52,18 +51,22 @@ public class BasicSeleniumTestTask {
                 ,"ERROR login was incorrect");
 
         //create
-        String nameProject="TestExampleTask"+new Date().getTime();
+        String nameTask="FirstTask"+new Date().getTime();
+        String descriptionTask="First Task Description 1";
         driver.findElement(By.xpath("//li/button[contains(@class,'plus_add_button')]")).click();
         //driver.findElement(By.xpath("//div[@data-offset-key='6p2n4-0-0' and @data-block='true']")).sendKeys("Primertarea");
-        driver.findElement(By.xpath("//div[@role='textbox']")).sendKeys("Primertarea");
-        driver.findElement(By.xpath("//textarea[@aria-invalid='false']")).sendKeys("Descripcion");
+        driver.findElement(By.xpath("//div[@role='textbox']")).sendKeys(nameTask);
+        driver.findElement(By.xpath("//textarea[@aria-invalid='false']")).sendKeys(descriptionTask);
         driver.findElement(By.xpath("//button[contains(@data-testid,'task-editor-submit-button')]")).click();
 
         //update
-       driver.findElement(By.xpath("//button[contains(@aria-label,'Editar')]")).click();
-        driver.findElement(By.xpath("//div[@role='textbox']")).sendKeys("PrimertareaUpdate");
-        driver.findElement(By.xpath("//textarea[@aria-invalid='false']")).sendKeys("DescripcionUpdate");
-        driver.findElement(By.xpath("//button[contains(@data-testid,'task-editor-submit-button')]")).click();
+
+        String nameTaskUpd="FirstTaskUpdate"+new Date().getTime();
+        String descriptionTaskUpd="First Task Description 1 Update";
+        /*driver.findElement(By.xpath("//button[contains(@aria-label,'Editar')]")).click();
+        driver.findElement(By.xpath("//div[@role='textbox']")).sendKeys(nameTaskUpd);
+        driver.findElement(By.xpath("//textarea[@aria-invalid='false']")).sendKeys(descriptionTaskUpd);
+        driver.findElement(By.xpath("//button[contains(@data-testid,'task-editor-submit-button')]")).click();*/
 
         //delete
         driver.findElement(By.xpath("//li[1]/div[1]/div[4]/button[contains(@aria-label,'Más acciones de tarea')]")).click();

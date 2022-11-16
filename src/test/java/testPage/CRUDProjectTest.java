@@ -1,4 +1,4 @@
-package basicSelenium;
+package testPage;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.Date;
 
-public class BasicSeleniumTestProject {
+public class CRUDProjectTest {
 
     WebDriver driver;
 

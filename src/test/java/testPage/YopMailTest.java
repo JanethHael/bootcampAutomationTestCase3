@@ -1,4 +1,4 @@
-package basicSelenium;
+package testPage;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
@@ -6,14 +6,11 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import session.Session;
 
 import java.time.Duration;
-import java.util.function.BooleanSupplier;
 
-public class BasicSeleniumTestYopMail {
+public class YopMailTest {
 
     WebDriver driver;
 
@@ -40,7 +37,7 @@ public class BasicSeleniumTestYopMail {
         String emailAdress2 ="janet@yopmail.com";
         String subjectEmail = "Send of Email";
         String messageEmail="Emergency Email";
-
+        //login
         driver.findElement(By.id("login")).sendKeys(emailAdressTemporal);
         driver.findElement(By.xpath("//button[contains(@title,'Revisa el correo @yopmail.com')]")).click();
 
