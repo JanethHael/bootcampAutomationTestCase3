@@ -6,7 +6,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import page.todoly.LoginSection;
 import page.yopmail.LoginPage;
+import page.yopmail.MainHome;
 import session.Session;
+import session.SessionTodoist;
 import util.GetProperties;
 import util.GetPropertiesYopmail;
 
@@ -15,7 +17,7 @@ import java.time.Duration;
 public class TestBase {
 
     LoginPage loginPage = new LoginPage();
-    WebDriver driver;
+    MainHome mainHome = new MainHome();
 
     @BeforeEach
     public void openBrowser(){
@@ -24,6 +26,6 @@ public class TestBase {
 
     @AfterEach
     public void closeBrowser(){
-        driver.quit();
+       // Session.getInstance().closeSession();
     }
 }
